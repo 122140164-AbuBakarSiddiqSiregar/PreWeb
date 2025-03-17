@@ -1,0 +1,144 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    align-content: center;
+}
+
+.countainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F7F9FC;
+}
+
+.wrapper-header {
+    height: 120px;
+    display: flex;
+    background-color: #1591EA;
+    width: auto;
+    color: #ffffff;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 20px #a4a5a5;
+}
+
+.wrapper {
+    flex-grow: 1;
+    margin: 10px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    width: auto;
+    padding: 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-footer {
+    flex-shrink: 0;
+    height: 90px;
+    padding: 30px;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    background-color: #393f44;
+    color: #ffffff;
+    box-shadow: 0px -1px 20px #a4a5a5;
+}
+
+.wrapper-footer p{
+    text-align: center;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 15px;
+    height: 320px;
+    padding: 10px;
+    width: 260px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 42px -32px rgb(0, 0, 0);
+}
+
+.box-1 h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+.box-1 p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 5px;
+}
+
+.box-1 .button-1 {
+    margin-top: auto;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #5CE65C;
+    color: #ffffff;
+    height: 70px;
+}
+
+.button-1{
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px 1px black;
+}   
+
+.button-1:hover{
+    background-color: #52cd52;
+    transform: rotate(-1deg);
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 646px) {
+    .wrapper-header {
+        height: auto;
+    }
+    
+    .wrapper {
+        flex-grow: 1;
+    }
+    
+    .wrapper-footer {
+        height: auto;
+    }
+
+    .box-1{
+        width: max-content;
+    }
+    .box-1 h1{
+        font-size: 36px;
+    }
+    .box-1 p{
+        font-size: 20px;
+    }
+}

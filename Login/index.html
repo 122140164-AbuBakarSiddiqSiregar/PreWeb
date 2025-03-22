@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Regis Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="countainer">
+        <div class="header">
+            <h1>Anda ingin login?</h1>
+        </div>
+        <div class="main">
+            <div class="form" onmouseover="MasukAreaForm()" onmouseleave="KeluarAreaForm()" id="Form">
+                <h1 id="TitleForm">Login</h1>
+                <input type="text" id="LNL" placeholder="Nama atau email pengguna" required><br>
+                <input type="password" id="PWS" placeholder="Password" required><br>
+                <button onmousedown="Submit()" onmouseover="hover()" onmouseleave="hleave()" onmouseup="hup()" id="button">Daftar</button>
+                <li><a href="../guest/index.html">Kembali</a></li>
+                <li><a href="../Register/index.html">Belum punya akun</a></li>
+                
+            </div>
+            <div class="massage">
+                <div class="grading1">
+                    <p id="massagebox">Nothing to say</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, molestias?</p>
+        </div>
+    </div>
+    <script>
+        function Submit(){
+            alert('Berhasil');
+            console.log("Berhasil disubmit");
+            let btn = document.querySelector('#button');
+            btn.style.background = '#00722c';
+        }
+        function hover(){
+            let btn = document.querySelector('#button');
+            btn.style.background = '#14b953';
+            console.log("Masuk area button");
+        }
+        function hup(){
+            let btn = document.querySelector('#button');
+            btn.style.background = '#14b953';
+        }
+        function hleave(){
+            let btn = document.querySelector('#button');
+            btn.style.background = '#3ee17d';
+        }
+        function MasukAreaForm(){
+            let psn = document.querySelector('#massagebox');
+            psn.innerHTML = "Hai, silahkan isi formnya";
+        }
+        function KeluarAreaForm(){
+            let psn = document.querySelector('#massagebox');
+            psn.innerHTML = "Nothing to say";
+        }
+    </script>
+</body>
+</html>
